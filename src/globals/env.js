@@ -10,8 +10,8 @@ switch (process.env.NODE_ENV) {
     REACT_APP_GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
     break;
   case 'production':
-    REACT_APP_PAYPAL_CLIENT_ID = 'ids';
-    REACT_APP_GOOGLE_MAPS_API_KEY = 'ids';
+    REACT_APP_PAYPAL_CLIENT_ID = process.env.REACT_APP_PAYPAL_CLIENT_ID;
+    REACT_APP_GOOGLE_MAPS_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
     // get variables de entorno firebase:
     // REACT_APP_PAYPAL_CLIENT_ID = functions.config().google
     //   .react_app_paypal_client_id;
