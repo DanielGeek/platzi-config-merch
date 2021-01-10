@@ -6,7 +6,8 @@ import handleSumTotal from '../helpers/handleSumTotal';
 import '../styles/components/Payment.css';
 
 const Payments = () => {
-  console.log('id paypal', process.env);
+  console.log('process.env', process.env);
+  console.log('env', env);
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
   const history = useHistory();
