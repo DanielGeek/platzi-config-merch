@@ -6,7 +6,6 @@ import handleSumTotal from '../helpers/handleSumTotal';
 import '../styles/components/Payment.css';
 
 const Payments = () => {
-
   console.log('process', process);
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
