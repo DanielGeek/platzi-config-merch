@@ -7,7 +7,6 @@ import '../styles/components/Payment.css';
 
 const Payments = () => {
   console.log('process.env', process.env);
-  console.log('secret env', REACT_APP_PAYPAL_CLIENT_ID);
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
   const history = useHistory();
