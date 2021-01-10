@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
 import { PayPalButton } from 'react-paypal-button';
 import { useHistory } from 'react-router-dom';
-import { REACT_APP_PAYPAL_CLIENT_ID, REACT_APP_GOOGLE_MAPS_API_KEY } from '../auth/firebase';
+import {
+  REACT_APP_PAYPAL_CLIENT_ID,
+  REACT_APP_GOOGLE_MAPS_API_KEY,
+} from '../auth/firebase';
 import AppContext from '../context/AppContext';
 import handleSumTotal from '../helpers/handleSumTotal';
 import '../styles/components/Payment.css';
