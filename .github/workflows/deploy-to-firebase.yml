@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@master
       #mostrar variables de entorno
       - name: Correr variables de entorno
-        run: env
+        run: env 
       - name: Install Dependencies
         run: npm install
       - name: Build

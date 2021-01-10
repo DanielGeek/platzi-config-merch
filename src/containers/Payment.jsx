@@ -2,17 +2,17 @@ import React, { useContext } from 'react';
 import { PayPalButton } from 'react-paypal-button';
 import { useHistory } from 'react-router-dom';
 import AppContext from '../context/AppContext';
+import { REACT_APP_PAYPAL_CLIENT_ID } from '../globals/env';
 import handleSumTotal from '../helpers/handleSumTotal';
 import '../styles/components/Payment.css';
 
 const Payments = () => {
-  console.log('process', process);
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
   const history = useHistory();
 
   const paypalOptions = {
-    clientId: process.env.REACT_APP_PAYPAL_CLIENT_ID,
+    clientId: REACT_APP_PAYPAL_CLIENT_ID,
     intent: 'capture',
     currency: 'USD',
   };
