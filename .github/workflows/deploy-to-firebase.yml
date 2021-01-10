@@ -5,6 +5,13 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - name: Var de entorno
+        run: |
+          echo $REACT_APP_PAYPAL_CLIENT_ID
+          echo $REACT_APP_GOOGLE_MAPS_API_KEY
+        env:
+          REACT_APP_PAYPAL_CLIENT_ID: ${{ secrets.REACT_APP_PAYPAL_CLIENT_ID }}
+          REACT_APP_GOOGLE_MAPS_API_KEY: ${{ env.REACT_APP_GOOGLE_MAPS_API_KEY }}
       - name: Checkout Repo
         uses: actions/checkout@master
       - name: Install Dependencies
