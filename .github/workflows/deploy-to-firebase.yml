@@ -7,6 +7,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
+      #mostrar variables de entorno
+      - name: Correr variables de entorno
+        run: env
       - name: Install Dependencies
         run: npm install
       - name: Build
