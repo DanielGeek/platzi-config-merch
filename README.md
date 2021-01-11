@@ -1,4 +1,4 @@
-# App ecommerce con react hooks, firebase hosting, consumiendo la api de paypal para pagos, google maps y la api de strapi como back-end para consumir la API de products
+# App ecommerce con react hooks, firebase hosting, CI, CD con github actions y firebase, consumiendo la api de paypal para pagos, google maps y la api de strapi como back-end para consumir la API de products
 
 # URL firebase
 https://platzi-store-merch2.web.app/
