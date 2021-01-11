@@ -16,3 +16,7 @@ la parte del pago no funciona en production ya que firebase solo permite agregar
 `cd ..`
 `npm install`
 `npm start`
+
+# docs
+https://www.notion.so/Curso-Profesional-de-React-Hooks-786c21f8cd014b4db78981a78834cb84
+https://platzi.com/tutoriales/2118-react-hooks/8661-como-usar-variables-de-entorno-en-el-proyecto-platzi-conf-merch-localmente-y-en-produccion/
